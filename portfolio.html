@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouya Mohseni</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+      }
+      p {
+        text-align: justify;
+      }
+      .cool-pink {
+        background-color: rgb(224, 197, 223);
+      }
+      .cool-pink2 {
+        color: white;
+        background-color: rgb(119, 119, 119);
+      }
+      .cool-gray {
+        color: white;
+        background-color: rgb(119, 119, 119);
+      }
+      .justify-text {
+        text-align: justify;
+      }
+      .card-img-top {
+        width: auto;
+        height: 240;
+      }
+      .pink-text {
+        color: rgb(224, 197, 223); 
+      }
+      .rounded {
+        border-radius: 15px;
+      }
+
+      .btn {
+        position: relative;
+        overflow: hidden;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0px;
+      }
+
+      /* Add an icon to the button */
+      .btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0; /* Initially hidden */
+      }
+
+      /* Show the icon and scale it when hovering */
+      .btn:hover::before {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+      }
+
+      /* Music Symbol Button */
+      .music-btn::before {
+        content: '\1F3BC'; /* Unicode for a musical note */
+      }
+
+      /* Document Symbol Button */
+      .document-btn::before {
+        content: '\1F4C4'; /* Unicode for a document symbol */
+      }
+
+      /* GitHub Symbol Button */
+      .github-btn::before {
+        content: '\1F4BB'; /* Unicode for a GitHub symbol */
+      }
+
+      /* Speaker Symbol Button */
+      .speaker-btn::before {
+        content: '\1F508'; /* Unicode for a speaker symbol */
+      }
+
+      /* Common styles for all buttons */
+      .music-btn,
+      .document-btn,
+      .github-btn,
+      .speaker-btn {
+        background-color: #808080; /* Gray color */
+        color: #ffffff; /* White text */
+      }
+
+      /* Change text color and background color on hover */
+      .music-btn:hover,
+      .document-btn:hover,
+      .github-btn:hover,
+      .speaker-btn:hover {
+        color: rgb(224, 197, 223); /* Pink text color */
+        background-color: #404040; /* Darker shade of gray on hover */
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg cool-pink navbar-light cool-pink fixed-top">
+      <a class="navbar-brand" href="#"><img src="media/images/cat2.gif" height="45"><img src="media/images/cat2.gif" height="45"><img src="media/images/cat2.gif" height="45"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="media/pdfs/CV-MohseniPouya.pdf">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media/pdfs/Transcript-MohseniPouya.pdf">Transcripts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/PouyaMohseni">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://pouyamohseni.medium.com">Medium</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+        <!-- Description -->
+        <div class="container my-5 pt-5">
+          <div class="row">
+            <div class="col-md-9">
+                <h1><span class="cool-pink">Pouya's Portfolio: A Collection of Research and Compositions</span> {</h1>
+                <p class="lead justify">I am an ambitious computer science undergraduate student at the University of Tehran. This portfolio showcases a collection of my research projects in Music Information Retrieval and Computer Music and my music compositions</p>
+                <p class="lead justify">With a strong foundation in computer science, a passion for music, and an eagerness to learn, I am constantly seeking new challenges and opportunities to expand my knowledge and skills.</p>
+                <h1>}</h1>
+                </div>
+          </div>
+        </div>
+
+
+        <!-- Grid boxes -->
+        <div class="container my-5">
+          <div>
+            <div class="row cool-gray py-5 px-5 rounded">
+              <h3 class="card-title my-2">Music Information Retrieval and Computer Music Research</h3>
+              <h5 class="card-title mx-3 justify-text">
+                My research interest lies at the intersection of machine learning and sound and music, particularly music information retrieval and audio processing. This interest has guided me throughout my undergraduate research projects and coursework. 
+              </h5>
+            </div>
+              <!--an expected gale force-->
+              <div class="row my-3 mx-5">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="card-img-top" src="media/images/MERT.png" alt="MERT" height="230">
+                  </div>
+                </div>
+                <div class="col-md-8 mb-6">
+                  <div class="row">
+                    <h3 class="card-title my-2">Persian Traditional MIR <h6 class="card-title mx-2 my-3">[In Preparation for Submission]</h5> </h3>
+                    <p class="justify-text">Self-supervised learning has shown promise in extracting meaningful information from speech and music.
+                      However, its application in Persian Traditional Music remains underexplored. This research leverages self-supervised methods
+                      to address downstream tasks specifically tailored to this music domain, contributing to a deeper understanding and preservation of this culturally significant heritage.
+                    </p>
+                    <div class="row mb-3">
+                      <a href="media/pdfs/PTMIR.pdf" class="btn document-btn mx-3">Report</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--an expected gale force-->
+              <div class="row my-3 mx-5">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="card-img-top" src="media/images/omr.png" alt="OMR" height="230">
+                  </div>
+                </div>
+                <div class="col-md-8 mb-6">
+                  <div class="row">
+                    <h3 class="card-title my-2">Handwritten Music Symbol Recognition </h3>
+                    <p class="justify-text">Optical music recognition (OMR) is a field of research that focuses on developing systems and 
+                      algorithms capable of automatically interpreting and analyzing handwritten or printed music scores.
+                      In this reseach we explore relevent datasets and models for this task. Ultimetly, a multi-layer ensemble model, leveraged by the transfer learning approach
+                      is proposed, which was able to outcompete the 2022 SOTA by 0.5%.
+                    </p>
+                    <div class="row mb-3">
+                      <a href="media/pdfs/OMR.pdf" class="btn document-btn mx-3">Report</a><a href="https://github.com/PouyaMohseni/OMR" class="btn github-btn">Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-3 mx-5">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="card-img-top" src="media/images/cc.png" alt="Creativity" height="230">
+                  </div>
+                </div>
+                <div class="col-md-8 mb-6">
+                  <div class="row">
+                    <h3 class="card-title my-2">Jazz Improvisation Generation</h3>
+                    <p class="justify-text">Jazz improvisation is the spontaneous creation of music, incorporating the artist's creativity and 
+                      allowing for unique expressions. Generating jazz music using genetic algorithms is beneficial due to the inherent randomness and 
+                      crossover of successful patterns. Surveying the previous studies, I proposed a novel evaluation function based on Graph Conditional Variational Autoencoders,
+                      incorporating a hierarchical representation of musical pieces.
+                    </p>
+                    <div class="row mb-3">
+                      <a href="media/pdfs/ComputationalCreativity.pdf" class="btn document-btn mx-3">Report</a><a href="https://github.com/PouyaMohseni/JazzImprov" class="btn github-btn">Code</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+            <div class="row cool-gray py-5 px-5 rounded">
+              <h3 class="card-title my-2">Contemporary Classical Compositions</h3>
+              <h5 class="card-title mx-3 justify-text">
+                In my free time, I passionately delve into jazz and contemporary classical music. As a creative outlet, I channel my musical expression through the composition of atonal pieces, exploring the rich possibilities within the style.
+              </h5>
+            </div>
+            <!--an expected gale force-->
+            <div class="row my-3 mx-5">
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img class="card-img-top" src="media/images/ens.png" alt="MERT" height="230">
+                </div>
+              </div>
+              <div class="col-md-8 mb-6">
+                <div class="row">
+                  <h3 class="card-title my-2">An Expected Gale-Force.</h3>
+                  <p class="justify-text">This is a contemporary classical trio that narrates the journy of a tightrope walker. As it begins, a subtle breeze whispers, accompanying the tightrope walker's gentle performance. The harmonies continue around this delicate breeze, creating a sense of tranquility, overwhelm, and anticipation.</p>
+                  <div class="row mb-3">
+                    <a href="#" class="btn music-btn mx-3">Piece and Discription</a>
+                    <a href="#" class="btn speaker-btn">Sibelius Playback</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!--an expected gale force-->
+              <div class="row my-3 mx-5">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="card-img-top" src="media/images/Flute.png" alt="MERT" height="230">
+                  </div>
+                </div>
+                <div class="col-md-8 mb-6">
+                  <div class="row">
+                    <h3 class="card-title my-2">The Old Leather Couch.</h3>
+                    <p class="justify-text">
+                      I had always been intimidated by the old leather couch that sat in the backyard of my grandfather's house, its cracked and faded surface bearing the marks of countless days spent under the sun.
+                      The Old Leather Couch is a flute solo piece in which I narraite a winter night when we were staying at my grandfather's house.
+                    </p>
+                    <div class="row mb-3">
+                      <a href="#" class="btn music-btn mx-3">Piece and Discription</a>
+                      <a href="#" class="btn speaker-btn">Sibelius Playback</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" >
+            <p><a href="mohseni0pouya@gmail.com">mohseni0pouya@gmail.com</a></p>
+            <p><a href="tel:+98933794073">+98 (933) 794-073</a></p>
+          </div>
+          <div class="col-md-6">
+            <!--ul class="list-inline text-md-right">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
