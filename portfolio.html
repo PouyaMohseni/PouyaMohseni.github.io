@@ -39,8 +39,9 @@
         text-align: justify;
       }
       .card-img-top {
-        width: auto;
-        height: 240;
+        width: 100%;
+        height: auto;
+        display: block;
       }
       .pink-text {
         color: rgb(224, 197, 223); 
@@ -61,7 +62,12 @@
         margin: 0px;
       }
 
-      /* Add an icon to the button */
+      .button-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px; 
+      }
+
       .btn::before {
         content: '';
         position: absolute;
@@ -69,51 +75,51 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: transform 0.3s ease, opacity 0.3s ease;
-        opacity: 0; /* Initially hidden */
+        opacity: 0; /
       }
 
-      /* Show the icon and scale it when hovering */
+
       .btn:hover::before {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 1;
       }
 
-      /* Music Symbol Button */
+
       .music-btn::before {
-        content: '\1F3BC'; /* Unicode for a musical note */
+        content: '\1F3BC'; 
       }
 
-      /* Document Symbol Button */
+
       .document-btn::before {
-        content: '\1F4C4'; /* Unicode for a document symbol */
+        content: '\1F4C4'; 
       }
 
-      /* GitHub Symbol Button */
+
       .github-btn::before {
-        content: '\1F4BB'; /* Unicode for a GitHub symbol */
+        content: '\1F4BB'; 
       }
 
-      /* Speaker Symbol Button */
+
       .speaker-btn::before {
-        content: '\1F508'; /* Unicode for a speaker symbol */
+        content: '\1F508';
       }
 
-      /* Common styles for all buttons */
+
       .music-btn,
       .document-btn,
       .github-btn,
       .speaker-btn {
-        background-color: #808080; /* Gray color */
-        color: #ffffff; /* White text */
+        background-color: #808080; 
+        color: #ffffff; 
       }
 
-      /* Change text color and background color on hover */
+
       .music-btn:hover,
       .document-btn:hover,
       .github-btn:hover,
       .speaker-btn:hover {
-        color: rgb(224, 197, 223); /* Pink text color */
-        background-color: #404040; /* Darker shade of gray on hover */
+        color: rgb(224, 197, 223); 
+        background-color: #404040; 
       }
 
 
@@ -185,8 +191,8 @@
                       However, its application in Persian Traditional Music remains underexplored. This research leverages self-supervised methods
                       to address downstream tasks specifically tailored to this music domain, contributing to a deeper understanding and preservation of this culturally significant heritage.
                     </p>
-                    <div class="row mb-3">
-                      <a href="media/pdfs/PTMIR.pdf" class="btn document-btn mx-3">Report</a>
+                    <div class="button-wrapper">
+                      <a href="media/pdfs/PTMIR.pdf" class="btn document-btn">Report</a>
                     </div>
                   </div>
                 </div>
@@ -209,8 +215,8 @@
                       architectures employing a two-layer ensemble approach to achieve competitive results in this task
                       compared to under-study paper (SOTA).
                     </p>
-                    <div class="row mb-3">
-                      <a href="media/pdfs/OMR.pdf" class="btn document-btn mx-3">Report</a><a href="https://github.com/PouyaMohseni/OMR" class="btn github-btn mx-2">Code</a>
+                    <div class="button-wrapper">
+                      <a href="media/pdfs/OMR.pdf" class="btn document-btn">Report</a><a href="https://github.com/PouyaMohseni/OMR" class="btn github-btn">Code</a>
                     </div>
                   </div>
                 </div>
@@ -229,8 +235,8 @@
                       crossover of successful patterns. Surveying the previous studies, I proposed a novel evaluation function based on Graph Conditional Variational Autoencoders,
                       incorporating a hierarchical representation of musical pieces.
                     </p>
-                    <div class="row mb-3">
-                      <a href="media/pdfs/ComputationalCreativity.pdf" class="btn document-btn mx-3">Report</a><a href="https://github.com/PouyaMohseni/JazzImprov" class="btn github-btn mx-2">Code</a>
+                    <div class="button-wrapper">
+                      <a href="media/pdfs/ComputationalCreativity.pdf" class="btn document-btn">Report</a><a href="https://github.com/PouyaMohseni/JazzImprov" class="btn github-btn">Code</a>
                     </div>
                   </div>
                 </div>
@@ -257,9 +263,9 @@
                   <p class="justify-text">This  is a contemporary classical trio that narrates the walk of a tightrope walker. As it begins, a gentle breeze whispers,
                     accompanying the tightrope walker's gentle performance. The harmonies continue around this delicate breeze, creating a sense of tranquility, overwhelm, and anticipation.
                   </p>
-                  <div class="row mb-3">
-                    <a href="media/pdfs/An Expected Gale-Force.pdf" class="btn music-btn mx-3">Score & Statement</a>
-                    <a href="media/recordings/An Expected Gale-Force.mp3" class="btn speaker-btn  mx-2">Sibelius Playback</a>
+                  <div class="button-wrapper">
+                    <a href="media/pdfs/An Expected Gale-Force.pdf" class="btn music-btn">Score & Statement</a>
+                    <a href="media/recordings/An Expected Gale-Force.mp3" class="btn speaker-btn">Sibelius Playback</a>
                   </div>
                 </div>
               </div>
@@ -278,9 +284,9 @@
                       As a child, I had always been intimidated by the old leather couch in the backyard of my grandfather's house. Its cracked and faded surface
                       indicated countless days spent under the sunlight. The Old Leather Couch is a contemporary classical flute solo that narrates a winter night when I was staying at my grandfather's house.
                     </p>
-                    <div class="row mb-3">
-                      <a href="media/pdfs/The Old Leather Couch.pdf" class="btn music-btn mx-3">Score & Statement</a>
-                      <a href="media/recordings/The Old Leather Couch.mp3" class="btn speaker-btn mx-2">Sibelius Playback</a>
+                    <div class="button-wrapper">
+                      <a href="media/pdfs/The Old Leather Couch.pdf" class="btn music-btn">Score & Statement</a>
+                      <a href="media/recordings/The Old Leather Couch.mp3" class="btn speaker-btn">Sibelius Playback</a>
                     </div>
                   </div>
                 </div>
@@ -312,9 +318,9 @@
                   of e-commerce sales in the world attributed to gift purchases. However, gift-giving 
                   can be ...
                 </p>
-                <div class="row mb-3">
-                  <a href="media/pdfs/Gift Recommendation Systems.pdf" class="btn document-btn mx-3">Published Paper</a>
-                  <a href="https://link.springer.com/article/10.1007/s10660-023-09790-6" class="btn github-btn  mx-2">Published Webpage</a>
+                <div class="button-wrapper">
+                  <a href="media/pdfs/Gift Recommendation Systems.pdf" class="btn document-btn">Published Paper</a>
+                  <a href="https://link.springer.com/article/10.1007/s10660-023-09790-6" class="btn github-btn">Published Webpage</a>
                 </div>
               </div>
             </div>
@@ -340,8 +346,10 @@
                       such as min-max, alpha-beta pruning, A*, and neural
                       networks within this strategy.
                     </p>
-                    <a href="https://drive.google.com/file/d/165qKsNC48F9CUJmH_l0MQaXiAbx4HXmI/view?usp=drive_web" class="btn document-btn">Report</a>
-                    <a href="https://github.com/PouyaMohseni/Connect-4-Agent" class="btn github-btn">Code</a>
+                    <div class="button-wrapper">
+                      <a href="https://drive.google.com/file/d/165qKsNC48F9CUJmH_l0MQaXiAbx4HXmI/view?usp=drive_web" class="btn document-btn">Report</a>
+                      <a href="https://github.com/PouyaMohseni/Connect-4-Agent" class="btn github-btn">Code</a>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -352,8 +360,10 @@
                     <h4 class="card-title">Maze Problem Agent (RL)</h4>
                     <p class="justify-text"> Implemented a Reinforcement Learning agent utilizing a Q-table to solve the maze problem, incorporating flags and moving objects. 
                     </p>
-                    <a href="https://pouyamohseni.medium.com/the-maze-reinforcement-learning-part-1-2bf53e56c94b" class="btn document-btn">Report (medium)</a>
-                    <a href="https://github.com/PouyaMohseni/Qlearn-Maze" class="btn github-btn">Code</a>
+                    <div class="button-wrapper">
+                      <a href="https://pouyamohseni.medium.com/the-maze-reinforcement-learning-part-1-2bf53e56c94b" class="btn document-btn">Report (Medium)</a>
+                      <a href="https://github.com/PouyaMohseni/Qlearn-Maze" class="btn github-btn">Code</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -361,10 +371,13 @@
                 <div class="card rounded">
                   <img class="card-img-top" src="media/images/cpu.gif" alt="Coursework" height="200">
                   <div class="card-body">
-                    <h4 class="card-title">Assembler & Disassembler</h4>
-                    <p class="justify-text"> Designed and implemented an Assembler and a Disassembler for 8086 Assembly language. The programs were developed in both Assembly and Python languages.
+                    <h4 class="card-title">Assembler-Disassembler</h4>
+                    <p class="justify-text"> Designed and implemented an Assembler and a Disassembler for 8086 Assembly language with more than 30 instructions. The programs were developed in both Assembly and Python languages and are able to translate machine code to 8086 Assembly language and vice versa.
                     </p>
-                    <a href="https://github.com/PouyaMohseni/Disassembler-Assembler" class="btn github-btn">Code and Documentations</a>
+                    <div class="button-wrapper">
+                      <a href="https://github.com/PouyaMohseni/Disassembler-Assembler" class="btn github-btn">Code and Documentations</a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -377,9 +390,15 @@
                 Apart from my research, I am committed to fostering inclusivity in STEM fields.
                 I am a member of the editorial and editor team for Reimman, an open-access student journal,
                 with the vision to enhance ML and applied mathematics knowledge among Persian-speaking individuals.
+            
+              <div class="button-wrapper mt-3">
+                <a href="media/pdfs/Riemann1.pdf" class="btn document-btn">Summer 2023 (Persian Language)</a>
+                <a href="media/pdfs/Riemann2.pdf" class="btn document-btn">Spring 2023 (Persian Language)</a>
+              </div>
             </h5>
+            
           </div>
-          <!--an expected gale force-->
+          <!--an expected gale force
           <div class="row my-3 mx-5">
               <div class="col-md-5 mb-5 mx-auto">
                 <div class="card rounded">
@@ -399,7 +418,7 @@
                   </div>
                 </div>
               </div>
-          </div>
+          </div>-->
         </div>
 
 
@@ -431,4 +450,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
-
